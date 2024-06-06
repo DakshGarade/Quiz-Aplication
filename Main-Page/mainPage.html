@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="mainPage.css">
+</head>
+
+<body>
+    <div id="box">
+       
+
+        <header id="header">
+       <div id="heading-con.
+       
+       
+       
+       
+       
+       
+       "> <h1 id="heading">Basic HTML Quiz</h1></div>
+    <div id="child"> <div id="name">   <div id="name-con"></div></div>
+    <div id="exitBtn-con"><header id="exitBtn">×</header></div></div>
+        </header>
+
+        <div id="midSection">
+          <div id="mid-child1">  <div id="questions-counter-con"><p id="questions-counter" class="mid-btn">Question <span id="ques-no"></span>/7</p></div>
+          <div id="correct-counter-con">  <p id="correct-counter" class="mid-btn"><span id="no-correct-count"></span>/7 Correct</p></div>     
+                 <div id="timer-con" ><p id="timer" class="mid-btn">00:00:00</p></div>
+                </div><br><br>
+            <div id="questions">
+                <h2 id="question">Q1. What does HTML stand for ?</h2>
+                <ul id="optList">
+                    <li class="opts">
+                        <input type="radio" name="option"  value="" id="opt1" class="optInp" onclick="enableBtn()">
+                        <label for="opt1" id="l1"></label>
+                    </li>
+                    <li class="opts">
+                        <input type="radio" name="option" id="opt2" value=""  class="optInp" onclick="enableBtn()">
+                        <label for="opt2" id="l2"></label>
+                    </li>
+                    <li class="opts">
+                        <input type="radio" name="option" value=""  id="opt3" class="optInp" onclick="enableBtn()">
+                        <label for="opt3" id="l3"></label>
+                    </li>
+                    <li class="opts">
+                        <input type="radio" name="option" value="Hyperlink Markup Language"  id="opt4" class="optInp" onclick="enableBtn()">
+                        <label for="opt4" id="l4"></label>
+                    </li>
+                </ul>
+                <button id="submitBtn" disabled onclick="submitYourAnswer(this)">SUBMIT</button>
+                <button id="continueBtn" style="display: none;" onclick="continueToNextQuestion()">CONTINUE</button>
+
+            </div>
+        </div>
+
+        <footer id="footer">
+ 
+        </footer>
+
+    </div>
+
+</body>
+<script src="mainPage.js"></script>
+</html>
